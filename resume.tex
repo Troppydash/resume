@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+    %----------HEADING----------
+
+    \begin{center}
+        \textbf{\huge \scshape Tianrui Qi} \\ \vspace{1pt}
+        \small 049 086 1137 $|$ \href{mailto:fortianrui@gmail.com}{\underline{fortianrui@gmail.com}} $|$
+        \href{https://linkedin.com/in/tianruiqi}{\underline{linkedin.com/in/tianruiqi}} $|$
+        \href{https://github.com/troppydash}{\underline{github.com/troppydash}}
+    \end{center}
+
+
+    %-----------EDUCATION-----------
+    \section{Education}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {University of Melbourne}{Melbourne, Australia}
+    {Bachelor of Science in Computing and Software Systems, WAM: 97}{Feb 2023 -- Nov 2025}
+
+    \resumeSubheading
+    {Scots College}{Wellington, New Zealand}
+    {IB Diploma, Proxime Accessit, 44/45}{Feb 2016 -- Dec 2022}
+
+
+
+    \resumeSubHeadingListEnd
+
+
+    %-----------EXPERIENCE-----------
+    \section{Experience}
+    \resumeSubHeadingListStart
+
+      \resumeSubheading
+    {Optiver FutureFocus Program}{Oct 2023}
+    {Optiver Sydney}{Sydney, Australia}
+    \resumeItemListStart
+    \resumeItem{Explored fundamental terms and algorithms in quantative trading}
+    \resumeItem{Collaborated in pairs to design a Python automatic pair trading algorithm in a simulated market environment, resulted 3rd place in competition}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Lead Writer}{Mar 2021 -- Jun 2021}
+    {Coding For All}{India}
+    \resumeItemListStart
+    \resumeItem{Designed a digital Javascript workbook on the language's fundamental syntax structure, targeted towards a
+        greater technological education of rural Indian students with a talent in programming}
+    \resumeItem{Collaborated to fulfil the NGO supplied topics and format requirements, deemed to be dynamic and
+    enthusiastic by the founder}
+
+    \resumeItemListEnd
+
+     \resumeSubheading
+    {Student Volunteer}{Jan 2019 -- Jan 2021}
+    {Code Club Aotearoa}{Wellington, New Zealand}
+    \resumeItemListStart
+    \resumeItem{Tutored curious middle-school students on a weekly basis on the aspects of programming, specifically
+        through Python and Scratch, leading to said cohorts' graduation of its Code Club programme}
+    \resumeItem{Delivered personal feedbacks to Code Club tutees' Scratch projects, with considerations of the individual
+        skill levels and abilities; led an Arduino based program, assisting the group's completion of introductory
+        projects}
+
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+    %-----------PROJECTS-----------
+    \section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Neural Network Positioning Tracker} $|$ \emph{C, Python}}{Dec 2023 -- Present}
+    \resumeItemListStart
+    \resumeItem{Programmed an ESP32 microcontroller to collect IMU sensor data and 4 distance data streams to obtain training data for a positional neural network}
+    \resumeItem{Derived a fault tolerant Trilateration algorithm, implemented an asymmetric double-sided two-way ranging protocol on the DW1000 with multiple stations to simultaneously receive 4 precise distance streams}
+
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{FoCdle, COMP10001 Project} $|$ \emph{Python, Rust}}{Mar 2023 -- May 2023}
+    \resumeItemListStart
+    \resumeItem{Developed a performant AI that optimally plays the wordle derivative game, FoCdle, in both Python and Rust}
+    \resumeItem{First place in the subject of 800 with an average 3.9 guesses per-equation}
+
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Codebrew, Hackathon} $|$ \emph{React}}{Apr 2023}
+    \resumeItemListStart
+    \resumeItem{Utilized industry standard React JS framework to develop Frugalicious for the 2023 CodeBrew hackathon;
+        created a functional web interface while accurately facilitating differing requests from the UI and backend
+        members}
+    \resumeItem{Achieved the Disruptive and Innovative Technologies track winner status for the implementation of cutting-
+        edge real-time profanity detection}
+    \resumeItemListEnd
+
+
+
+    \resumeSubHeadingListEnd
+
+    \section{Achievements}
+    \begin{itemize}[leftmargin=0.25in,noitemsep]
+        \small{
+               \item 2024, Dean's Honours List 2023
+               \item 2024, First Year Prize in Advanced Mathematics and Statistics
+               \item 2024, Optiver Volatility Lab workshop winner\\
+               \item 2023, APAC Inter-Uni Coding Competition, Best First Year Team \\
+               \item 2023, FNCE20003 Personal Finance, First in Subject \\
+               \item 2022, NZQA Scholarship: Physics (Outstanding), Chemistry, Economics \\
+               \item 2022, New Zealand International Baccalaureate Schools Top Scholar Award: for exceptional academic
+                    achievement in the IB Diploma \\
+               \item 2022, New Zealand Economics Competition, High Distinction \\
+        }
+    \end{itemize}
+
+
+
+    %-----------PROGRAMMING SKILLS-----------
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+                \textbf{Languages}{: Java, Python 3, C/C++, C\#, ES6, HTML/CSS, Rust, \LaTeX} \\
+                \textbf{Frameworks}{: React, Sprint Boot, Unity, OpenGL} \\
+                \textbf{Libraries}{: Numpy, Matplotlib, Pandas, Scipy, PyTorch}
+        }}
+    \end{itemize}
+
+
+    %-------------------------------------------
+\end{document}
